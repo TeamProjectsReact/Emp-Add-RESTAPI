@@ -7,7 +7,9 @@ const User = require('../Models/User');
 const AuthController = {
     SignUp: async (req, res) => {
         try{
+            const { username, email, password} = req.body;
 
+            
         }
         catch (err) {
             return res.json({Error: "Internal Server ERROR"})
