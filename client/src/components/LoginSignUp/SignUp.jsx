@@ -21,7 +21,6 @@ const SignUp = () => {
             .then(res => {
                 if(res.data.Status === "Success"){
                     alert("Registation Successfull")
-                    window.location.reload()
                     navigate('/')                    
                 }
                 else{
