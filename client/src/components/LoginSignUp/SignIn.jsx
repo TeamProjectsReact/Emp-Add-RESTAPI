@@ -26,6 +26,9 @@ const SignIn = () => {
                     secureLocalStorage.setItem('Login1', res.data.Result.email)
                     secureLocalStorage.setItem('Login2', res.data.Result.Role)      
                 }
+                else{
+                    alert(res.data.Error)
+                }
             })
         }
         catch(err) {
