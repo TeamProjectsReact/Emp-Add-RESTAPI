@@ -10,7 +10,7 @@ const AuthController = {
             const { username, email, password} = req.body;
 
             // check user
-            const checkUser = await User.findOne({ username, email })
+            const checkUser = await User.findOne({ email, username })
 
             if(checkUser) {
                 return res.json({Error: "User Already in Database"})
