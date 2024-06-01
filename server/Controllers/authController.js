@@ -56,6 +56,9 @@ const AuthController = {
 
                 if(PassCheck){
                     // create token for login user
+                    const token = jwt.sign({ userId: checkuser._id, userEmail: checkuser.email, userRole: checkuser.Role }, process.env.JWT_SECRET, { expiresIn: '1h' });
+            
+                    return res.json({Status: "Success", Token:token, Result: checkuser})       
                 }
                 else{
                     return res.json({Erro: "Password Not Match"})
