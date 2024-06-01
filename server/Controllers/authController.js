@@ -17,7 +17,7 @@ const AuthController = {
             }
             else{
                 // hash password
-                const hashPass = bcrypt.hash(password, 10)
+                const hashPass = await bcrypt.hash(password, 10)
 
                 // insert user
                 const UserNew = new User({
