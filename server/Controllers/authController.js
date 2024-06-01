@@ -52,7 +52,7 @@ const AuthController = {
             const LoginUser = await User.findOne({ email })
             if(LoginUser) {
                 // check pass
-                const PassCheck = bcrypt.compare(password, LoginUser.password)
+                const PassCheck = await bcrypt.compare(password, LoginUser.password)
 
                 if(PassCheck){
                     // create token for login user
