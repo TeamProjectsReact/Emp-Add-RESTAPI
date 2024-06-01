@@ -24,7 +24,7 @@ const AuthController = {
                     username,
                     email,
                     password: hashPass,
-                    Role: 'Users'
+                    Role: 'User'
                 })
 
                 // save user
