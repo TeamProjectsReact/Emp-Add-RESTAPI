@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { BsPersonAdd } from "react-icons/bs";
 import { Link } from 'react-router-dom';
+import secureLocalStorage from 'react-secure-storage';
 
 const SignIn = () => {
     // for login data
@@ -19,7 +20,11 @@ const SignIn = () => {
             .then(res => {
                 if(res.data.Status === "Success"){
                     alert("login Successfull")
-                    
+                    localStorage.setItem('token', res.data.Token)
+                    navigate('/Dashboard')
+                    // login user Email 
+                    secureLocalStorage.setItem('Login1', res.data.Result.email)
+                    secureLocalStorage.setItem('Login2', res.data.Result.Role)      
                 }
             })
         }
