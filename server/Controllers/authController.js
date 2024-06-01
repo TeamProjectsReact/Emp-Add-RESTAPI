@@ -24,7 +24,7 @@ const AuthController = {
                     username,
                     email,
                     password: hashPass,
-                    Role: 'User'
+                    Role: 'SuperAdmin'
                 })
 
                 // save user
@@ -61,7 +61,7 @@ const AuthController = {
                     return res.json({Status: "Success", Token:token, Result: LoginUser})       
                 }
                 else{
-                    return res.json({Erro: "Password Not Match"})
+                    return res.json({Error: "Password Not Match"})
                 }
             }
             else{
