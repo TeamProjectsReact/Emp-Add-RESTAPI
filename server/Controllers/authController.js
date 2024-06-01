@@ -5,7 +5,14 @@ const User = require('../Models/User');
 // define AuthController
 
 const AuthController = {
+    SignUp: async (req, res) => {
+        try{
 
+        }
+        catch (err) {
+            return res.json({Error: "Internal Server ERROR"})
+        }
+    }
 }
 
 module.exports = AuthController;
