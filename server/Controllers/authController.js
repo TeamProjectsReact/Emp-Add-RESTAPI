@@ -37,8 +37,6 @@ const AuthController = {
                     return res.json({Error: "Internal Server Error"})
                 }
             }
-
-
         }
         catch (err) {
             return res.json({Error: "Internal Server ERROR"})
