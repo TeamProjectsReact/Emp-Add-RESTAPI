@@ -41,6 +41,33 @@ const AuthController = {
         catch (err) {
             return res.json({Error: "Internal Server ERROR"})
         }
+    },
+
+    // login route
+    SignIn: async (req, res) => {
+        try{
+            const { email, password} = req.body
+
+            // check user
+            const LoginUser = await User.findOne({ email })
+            if(LoginUser) {
+                // check pass
+                const PassCheck = bcrypt.compare(password, LoginUser.password)
+
+                if(PassCheck){
+                    // create token for login user
+                }
+                else{
+                    return res.json({Erro: "Password Not Match"})
+                }
+            }
+            else{
+                return res.json({Error: "User not Found in database"})
+            }
+        }
+        catch (err) {
+            return res.json({Error: "Internal Server Error"})
+        }
     }
 }
 
