@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react'
 import { BsPersonAdd } from "react-icons/bs";
 import { Link } from 'react-router-dom';
@@ -10,11 +11,21 @@ const SignIn = () => {
     })
 
     // send data to backend using axios
-    const headleSubmit = (e) => {
+    const headleSubmit = async (e) => {
         e.preventDefault();
 
-        // login to system
-        // this will be updated in future versions
+        try{
+            const res = await axios.post('http://localhost:500/auth/SignIn', LoginData)
+            .then(res => {
+                if(res.data.Status === "Success"){
+                    alert("login Successfull")
+                    
+                }
+            })
+        }
+        catch(err) {
+            console.log(err)
+        }
     }
   return (
     <div className='bg-gray-200 min-h-screen py-24 px-8'>
