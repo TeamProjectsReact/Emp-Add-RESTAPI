@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt');
-const jsonwebtoken = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 const User = require('../Models/User');
 
 // define AuthController
@@ -65,11 +65,12 @@ const AuthController = {
                 }
             }
             else{
-                return res.json({Error: "User not Found in database"})
+                return res.json({Error: "User not Found in database "})
             }
         }
         catch (err) {
-            return res.json({Error: "Internal Server Error"})
+            console.log(err)
+            return res.json({Error: "Internal Server Error "})
         }
     }
 }
