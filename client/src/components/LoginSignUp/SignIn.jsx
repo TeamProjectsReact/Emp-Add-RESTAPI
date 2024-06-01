@@ -16,7 +16,7 @@ const SignIn = () => {
         e.preventDefault();
 
         try{
-            const res = await axios.post('http://localhost:500/auth/SignIn', LoginData)
+            const res = await axios.post('http://localhost:5000/auth/SignIn', LoginData)
             .then(res => {
                 if(res.data.Status === "Success"){
                     alert("login Successfull")
