@@ -1,10 +1,11 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import { BsPersonAdd } from "react-icons/bs";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import secureLocalStorage from 'react-secure-storage';
 
 const SignIn = () => {
+    const navigate = useNavigate()
     // for login data
     const [LoginData, SetLoginData] = useState({
         email: '',
