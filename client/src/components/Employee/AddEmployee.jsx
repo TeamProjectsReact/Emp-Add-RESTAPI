@@ -100,6 +100,16 @@ const AddEmployee = () => {
                                         <option value="Single">Single</option>   
                                     </select>
                                 </div>
+                                <div className="my-2">
+                                    <label htmlFor="" className="text-gray-500">Gender</label>
+                                    <select className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required
+                                    >
+                                        <option>Select Option</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
                             </div>
 
 
