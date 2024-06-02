@@ -59,7 +59,16 @@ const EmployeeController = {
     },
 
     ViewEmp: async (req, res) => {
-        
+        try{
+            const EmpData = await Employee.find()
+            
+            if(EmpData){
+                return res.json({Result: EmpData})
+            }
+        }
+        catch(err){
+            console.log(err)
+        }
     }
 }
 
