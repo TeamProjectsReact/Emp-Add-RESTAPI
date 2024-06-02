@@ -45,6 +45,9 @@ const SignUp = () => {
                     <div className=""></div>
                     <div className="">
                         <div className="bg-white py-16 px-8 rounded shadow-md w-full ">
+                            <Link to={'/Dashboard'}>
+                                <button className="bg-blue-500 text-white py-2 px-4 rounded duration-500 hover:bg-blue-600 shadow-md">Back</button>
+                            </Link>
                             <center className='text-gray-500'>
                                 {/* change the Icon According to your needs */}
                                 <h1 className=''><BsPersonAdd className='h-20 w-auto'/></h1>
