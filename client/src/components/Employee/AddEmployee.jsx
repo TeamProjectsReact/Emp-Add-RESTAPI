@@ -16,6 +16,21 @@ const AddEmployee = () => {
                     <Link to={'/Dashboard'}>
                         <button className="bg-blue-500 text-white py-2 px-4 rounded duration-500 hover:bg-blue-600 shadow-md">Back</button>
                     </Link>
+
+                    <form >
+                        <div className="">
+                            <div className="md:grid grid-cols-4 gap-4">
+                                <div className="my-2">
+                                    <label htmlFor="" className="text-gray-500">Employee ID : </label>
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee ID' />
+                                </div>
+                                <div className="my-2">
+                                    <label htmlFor="" className="text-gray-500">Initials : </label>
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Initials' />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         )
