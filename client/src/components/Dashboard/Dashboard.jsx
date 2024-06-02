@@ -11,7 +11,13 @@ const Dashboard = () => {
     return (
       <div className='bg-gray-200 py-8 px-12 min-h-screen'>
         <div className="bg-white rounded shadow-md py-8 px-12">
-
+          <div className="flex justify-between">
+            <h1 className="text-gray-500 font-semibold text-xl">
+              Dashboard
+            </h1>
+            <p className="text-red-500 font-semibold text-xl">LogOut</p>
+          </div>
+          <hr className='my-4'/>
         </div>
       </div>
     )
