@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, {useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import secureLocalStorage from 'react-secure-storage';
@@ -13,6 +14,18 @@ const Dashboard = () => {
     navigate('/')
     window.location.reload()
   }
+
+  // fetch all Emp data
+  const [ViewEmpData, SetViewEmpData] = useState([])
+
+  useEffect(() => {
+    try{
+      const res = axios.get('http://localhost:5000/Employee/DataEmp')
+    }
+    catch(err){
+      console.log(err)
+    }
+  }, [])
 
   if(RoleUser !== null && EmailUser !== null && RoleUser === "SuperAdmin"){
     return (
