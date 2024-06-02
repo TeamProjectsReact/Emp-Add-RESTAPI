@@ -16,7 +16,26 @@ const EmployeeSchema = mongoose.Schema({
     phone: {
         type: String,
         required: true,
+    },
+    email: {
+        type: String,
+        required: true,
+        unique:true,
+    },
+    designation: {
+        type: String,
+        required: true,
+    },
+    nic: {
+        type: String,
+        required: true,
+        unique:true,
+    },
+    dob: {
+        type: Date,
+        required: true,
     }
+
 })
 
 // create Model
