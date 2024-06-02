@@ -6,6 +6,7 @@ const path = require('path');
 
 // define Routes
 const AuthRoute = require('./Routes/authRoute')
+const EmployeeRoute = require('./Routes/EmployeeRoute')
 
 // app
 
@@ -22,6 +23,7 @@ app.use(express.json())
 
 // all routes
 app.use('/auth', AuthRoute);
+app.use('/Employee', EmployeeRoute);
 
 
 app.listen(PORT, () => {
