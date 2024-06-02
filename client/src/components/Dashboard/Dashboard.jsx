@@ -7,6 +7,13 @@ const Dashboard = () => {
   const EmailUser = secureLocalStorage.getItem("Login1");
   const RoleUser = secureLocalStorage.getItem("Login2");
 
+  // headleLogOut
+  const headleLogOut = () => {
+    localStorage.clear()
+    navigate('/')
+    window.location.reload()
+  }
+
   if(RoleUser !== null && EmailUser !== null && RoleUser === "SuperAdmin"){
     return (
       <div className='bg-gray-200 py-8 px-12 min-h-screen'>
@@ -15,7 +22,7 @@ const Dashboard = () => {
             <h1 className="text-gray-500 font-semibold text-xl">
               Dashboard
             </h1>
-            <p className="text-red-500 font-semibold text-xl">LogOut</p>
+            <p className="text-red-500 font-semibold text-xl cursor-pointer" onClick={headleLogOut}>LogOut</p>
           </div>
           <hr className='my-4'/>
           <Link to={'/AddEmployee'}>
