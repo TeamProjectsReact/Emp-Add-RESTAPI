@@ -82,7 +82,7 @@ const Dashboard = () => {
                             {
                               ViewEmpData.map((Employee, index) => {
                                 return (
-                                  <tr key={index}>
+                                  <tr key={index} className='border-b border-gray-300'>
                                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                         <p className="hidden md:table-cell">{Employee.EmpID}</p>
                                         <div className="md:hidden">
@@ -98,26 +98,26 @@ const Dashboard = () => {
                                     <th scope="row" class="hidden md:table-cell px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
                                         {Employee.email}
                                     </th>
-                                    <th scope="row" class="hidden md:table-cell px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                                    <td scope="row" class="hidden md:table-cell px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
                                         {Employee.surname}
-                                    </th>
-                                    <th scope="row" class="hidden md:table-cell px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                                    </td>
+                                    <td scope="row" class="hidden md:table-cell px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
                                         {Employee.nic}
-                                    </th>
-                                    <th scope="row" class="hidden md:table-cell px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                                    </td>
+                                    <td scope="row" class="hidden md:table-cell px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
                                         {Employee.designation}
-                                    </th>
-                                    <th scope="row" class="hidden md:table-cell px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                                    </td>
+                                    <td scope="row" class="hidden md:table-cell px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
                                         {Employee.type}
-                                    </th>
-                                    <th scope="row" class="hidden md:table-cell px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                                    </td>
+                                    <td scope="row" class="hidden md:table-cell px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
                                         {Employee.gender}
-                                    </th>
-                                    <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                                    </td>
+                                    <td scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
                                         <div className="flex">
                                                   
                                         </div>
-                                    </th>
+                                    </td>
                                 </tr>
                                 )
                               })
