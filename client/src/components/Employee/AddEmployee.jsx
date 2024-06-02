@@ -52,9 +52,11 @@ const AddEmployee = () => {
                             <div className="md:grid grid-cols-3 gap-4">
                                 <div className="my-2">
                                     <label htmlFor="">Job Category</label>
-                                    <select className="w-full h-12 border border-blue-400 rounded pl-2" required
+                                    <select className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required
                                     >
                                         <option>Select Option</option>
+                                        <option value="HOD">Head</option>
+                                        <option value="HOD">Head</option>
                                         <option value="HOD">Head</option>
                                         <option value="TO">Transport Office</option>
                                         <option value="Librarian">Librarian</option>
@@ -64,7 +66,6 @@ const AddEmployee = () => {
                                         <option value="Scientist">Scientist</option>
                                         <option value="NonAcademic Staff">NonAcademic Staff</option>
                                         <option value="RA">RA</option>   
-                                        <option value="VRA">Volunteer RA</option>  
                                         <option value="Driver">Driver</option>      
                                     </select>
                                 </div>
