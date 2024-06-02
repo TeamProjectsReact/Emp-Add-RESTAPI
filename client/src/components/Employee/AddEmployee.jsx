@@ -6,7 +6,7 @@ const AddEmployee = () => {
     const RoleUser = secureLocalStorage.getItem("Login1");
     const EmailUser = secureLocalStorage.getItem("login2");
 
-    if(RoleUser !== null && EmailUser !== null){
+    if(RoleUser !== null && EmailUser !== null && RoleUser === "SuperAdmin"){
         return (
             <div>AddEmployee</div>
         )
