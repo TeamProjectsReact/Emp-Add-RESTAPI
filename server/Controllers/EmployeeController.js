@@ -44,6 +44,15 @@ const EmployeeController = {
                 Gender, 
                 Religion
             })
+
+            const ResultEmp = NewEmp.save()
+
+            if(ResultEmp){
+                return res.json({ Status: "Success"})
+            }
+            else{
+                return res.json({ Error: "Internal Server Error"})
+            }
         }
     }
 }
