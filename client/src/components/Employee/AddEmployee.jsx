@@ -36,6 +36,10 @@ const AddEmployee = () => {
                                     <label htmlFor="" className="text-gray-500">Surname : </label>
                                     <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Surname' />
                                 </div>
+                                <div className="my-2">
+                                    <label htmlFor="" className="text-gray-500">Phone : </label>
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Phone' />
+                                </div>
                             </div>
                             <div className="my-2">
                                 <label htmlFor="" className="text-gray-500">Address : </label>
