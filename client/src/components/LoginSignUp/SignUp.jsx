@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { BsPersonAdd } from "react-icons/bs";
 import { Link, useNavigate } from 'react-router-dom';
+import secureLocalStorage from 'react-secure-storage';
 
 const SignUp = () => {
     const navigate = useNavigate()
