@@ -27,6 +27,10 @@ const EmployeeSchema = mongoose.Schema({
         required: true,
         unique:true,
     },
+    designation: {
+        type: String,
+        required: true,
+    },
     nic: {
         type: String,
         required: true,
@@ -37,6 +41,10 @@ const EmployeeSchema = mongoose.Schema({
         required: true,
     },
     emgcontact: {
+        type: String,
+        required: true,
+    },
+    type: {
         type: String,
         required: true,
     },

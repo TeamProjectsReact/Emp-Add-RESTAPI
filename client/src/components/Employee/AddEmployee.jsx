@@ -40,11 +40,39 @@ const AddEmployee = () => {
                                     <label htmlFor="" className="text-gray-500">Phone : </label>
                                     <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Phone' />
                                 </div>
+                                <div className="my-2">
+                                    <label htmlFor="" className="text-gray-500">NIC : </label>
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee NIC' />
+                                </div>
                             </div>
-                            <div className="my-2">
+                            <div className="my-4">
                                 <label htmlFor="" className="text-gray-500">Address : </label>
                                 <input type="email" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Address' />
                             </div>
+                            <div className="md:grid grid-cols-3 gap-4">
+                                <div className="my-2">
+                                    <label htmlFor="">Job Category</label>
+                                    <select className="w-full h-12 border border-blue-400 rounded pl-2" required
+                                    >
+                                        <option>Select Option</option>
+                                        <option value="HOD">Head</option>
+                                        <option value="TO">Transport Office</option>
+                                        <option value="Librarian">Librarian</option>
+                                        <option value="Labmanager">Labmanager</option>
+                                        <option value="Accountant">Accountant</option> 
+                                        <option value="PostDoc">PostDoc</option>
+                                        <option value="Scientist">Scientist</option>
+                                        <option value="NonAcademic Staff">NonAcademic Staff</option>
+                                        <option value="RA">RA</option>   
+                                        <option value="VRA">Volunteer RA</option>  
+                                        <option value="Driver">Driver</option>      
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+
 
                         </div>
                     </form>
