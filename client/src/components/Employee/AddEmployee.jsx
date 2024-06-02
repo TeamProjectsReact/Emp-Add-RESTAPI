@@ -19,7 +19,10 @@ const AddEmployee = () => {
         Category: '',
         dob: '',
         emgContact: '',
-
+        Type: '',
+        CivilState: '',
+        Gender: '',
+        Religion: '',
     })
 
     if(RoleUser !== null && EmailUser !== null && RoleUser === "SuperAdmin"){
@@ -37,19 +40,23 @@ const AddEmployee = () => {
                             <div className="md:grid grid-cols-3 gap-4">
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Employee ID : </label>
-                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee ID' />
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee ID' 
+                                    onChange={e => SetEmpData({...EmpData, empID:e.target.value})}/>
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Email : </label>
-                                    <input type="email" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Email' />
+                                    <input type="email" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Email' 
+                                    onChange={e => SetEmpData({...EmpData, empEmail:e.target.value})}/>
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Initials : </label>
-                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Initials' />
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Initials' 
+                                    onChange={e => SetEmpData({...EmpData, Initials:e.target.value})}/>
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Surname : </label>
-                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Surname' />
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Surname' 
+                                    onChange={e => SetEmpData({...EmpData, Surname:e.target.value})}/>
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Phone : </label>
