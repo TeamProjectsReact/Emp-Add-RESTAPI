@@ -79,6 +79,18 @@ const AddEmployee = () => {
                                     <label htmlFor="" className="text-gray-500">Type : </label>
                                     <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Type' />
                                 </div>
+                                <div className="my-2">
+                                    <label htmlFor="" className="text-gray-500">Job Category</label>
+                                    <select className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required
+                                    >
+                                        <option>Select Option</option>
+                                        <option value="Permanent">Permanent</option>
+                                        <option value="Contract">Contract</option>
+                                        <option value="Assignment">Assignment</option>
+                                        <option value="Visiting">Visiting</option>
+                                        <option value="Temporary">Temporary</option>     
+                                    </select>
+                                </div>
                             </div>
 
 
