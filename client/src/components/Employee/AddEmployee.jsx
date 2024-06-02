@@ -56,7 +56,7 @@ const AddEmployee = () => {
                                     >
                                         <option >Select Option</option>
                                         <option value="HOD">Head</option>
-                                        <option value="TO">Transport Office</option>
+                                        <option value="TO">TO</option>
                                         <option value="Librarian">Librarian</option>
                                         <option value="Labmanager">Labmanager</option>
                                         <option value="Accountant">Accountant</option> 
