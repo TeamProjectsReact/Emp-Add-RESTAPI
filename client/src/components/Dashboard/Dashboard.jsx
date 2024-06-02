@@ -10,7 +10,7 @@ const Dashboard = () => {
   if(RoleUser !== null && EmailUser !== null && RoleUser === "SuperAdmin"){
     return (
       <div className='bg-gray-200 py-8 px-12 min-h-screen'>
-        <div className="bg-white rounded shadow-md py-4 px-8">
+        <div className="bg-white rounded shadow-md py-8 px-12">
 
         </div>
       </div>
