@@ -67,8 +67,7 @@ const SignIn = () => {
                         <Link><p className="my-2 md:mx-8 text-blue-500 font-semibold">Forget Password ? </p></Link>
                     </div>
                     <hr className='my-2'/>
-                    <p className="my-4">Don't have an Account ? <Link to={'/SignUp'}><span className="text-blue-500">SignUp</span></Link></p>
-                </div>  
+                 </div>  
             </div>
             <div className=""></div>
         </div>
