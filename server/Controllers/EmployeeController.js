@@ -56,6 +56,10 @@ const EmployeeController = {
                 return res.json({ Error: "Internal Server Error"})
             }
         }
+    },
+
+    ViewEmp: async (req, res) => {
+        
     }
 }
 
