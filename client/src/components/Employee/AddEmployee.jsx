@@ -25,6 +25,14 @@ const AddEmployee = () => {
         Religion: '',
     })
 
+    // headleSubmit
+
+    const headleSubmit = (e) => {
+        e.preventDefault();
+
+        console.log(EmpData)
+    }
+
     if(RoleUser !== null && EmailUser !== null && RoleUser === "SuperAdmin"){
         return (
             <div className='bg-gray-200 min-h-screen py-12 px-8'>
@@ -35,7 +43,7 @@ const AddEmployee = () => {
                         <button className="bg-blue-500 text-white py-2 px-4 rounded duration-500 hover:bg-blue-600 shadow-md">Back</button>
                     </Link>
 
-                    <form >
+                    <form onSubmit={headleSubmit}>
                         <div className="">
                             <div className="md:grid grid-cols-3 gap-4">
                                 <div className="my-2">
