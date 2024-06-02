@@ -105,7 +105,7 @@ const AddEmployee = () => {
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Type : </label>
                                     <select className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required
-                                    >
+                                    onChange={e => SetEmpData({...EmpData, Type:e.target.value})}>
                                         <option>Select Option</option>
                                         <option value="Permanent">Permanent</option>
                                         <option value="Contract">Contract</option>
@@ -117,7 +117,7 @@ const AddEmployee = () => {
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Civil Status</label>
                                     <select className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required
-                                    >
+                                    onChange={e => SetEmpData({...EmpData, CivilState:e.target.value})}>
                                         <option>Select Option</option>
                                         <option value="Married">Married</option>
                                         <option value="Single">Single</option>   
@@ -126,7 +126,7 @@ const AddEmployee = () => {
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Gender</label>
                                     <select className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required
-                                    >
+                                    onChange={e => SetEmpData({...EmpData, Gender:e.target.value})}>
                                         <option>Select Option</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
@@ -135,7 +135,8 @@ const AddEmployee = () => {
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Religion : </label>
-                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Religion' />
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Religion' 
+                                    onChange={e => SetEmpData({...EmpData, emgContact:e.target.value})}/>
                                 </div>
                             </div>
                             <div className="">
