@@ -10,9 +10,9 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SignIn />}/>
-        <Route path="/SignUp" element={<SignUp />} />
 
         {/* protect route using  PrivateRoute */}
+        <Route path="/SignUp" element={<PrivateRoute ProtectRoute={<SignUp />}/>} />
         <Route path="/Dashboard" element={<PrivateRoute ProtectRoute={<Dashboard />}/>} />
         <Route path="/AddEmployee" element={<PrivateRoute ProtectRoute={<AddEmployee />} />} />
       </Routes>
