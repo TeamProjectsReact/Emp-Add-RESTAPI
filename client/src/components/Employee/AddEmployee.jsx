@@ -67,6 +67,10 @@ const AddEmployee = () => {
                                         <option value="Driver">Driver</option>      
                                     </select>
                                 </div>
+                                <div className="my-2">
+                                    <label htmlFor="" className="text-gray-500">Date of Birth : </label>
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Date of Birth' />
+                                </div>
                             </div>
 
 
