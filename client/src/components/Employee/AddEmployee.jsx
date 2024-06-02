@@ -1,4 +1,4 @@
-import React, {useEffect } from 'react'
+import React, {useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import secureLocalStorage from 'react-secure-storage';
 
@@ -6,6 +6,21 @@ const AddEmployee = () => {
     const navigate = useNavigate()
     const EmailUser = secureLocalStorage.getItem("Login1");
     const RoleUser = secureLocalStorage.getItem("Login2");
+
+    // emp data
+    const [EmpData, SetEmpData] = useState({
+        empID: '',
+        empEmail: '',
+        Initials: '',
+        Surname: '',
+        Phone: '',
+        NIC: '',
+        Address: '',
+        Category: '',
+        dob: '',
+        emgContact: '',
+
+    })
 
     if(RoleUser !== null && EmailUser !== null && RoleUser === "SuperAdmin"){
         return (
@@ -77,10 +92,6 @@ const AddEmployee = () => {
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Type : </label>
-                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Type' />
-                                </div>
-                                <div className="my-2">
-                                    <label htmlFor="" className="text-gray-500">Job Category</label>
                                     <select className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required
                                     >
                                         <option>Select Option</option>
