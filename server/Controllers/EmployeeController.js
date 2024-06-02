@@ -22,7 +22,7 @@ const EmployeeController = {
         } = req.body;
 
         // check employee already in database
-        const checkEmp =  await Employee
+        const checkEmp =  await Employee.findOne({ empID, empEmail, NIC })
     }
 }
 
