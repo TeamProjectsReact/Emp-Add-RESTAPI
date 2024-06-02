@@ -34,7 +34,32 @@ const EmployeeSchema = mongoose.Schema({
     dob: {
         type: Date,
         required: true,
+    },
+    emgcontact: {
+        type: String,
+        required: true,
+    },
+    type: {
+        type: String,
+        required: true,
+    },
+    civilstatus: {
+        type: String,
+        required: true,
+    },
+    gender: {
+        type: String,
+        required: true,
+    },
+    relig: {
+        type: String,
+        required: true,
+    },
+    create_at: {
+        type: Date,
+        default: Date.now,
     }
+
 
 })
 
