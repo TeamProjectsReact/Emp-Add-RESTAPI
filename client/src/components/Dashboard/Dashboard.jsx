@@ -19,14 +19,9 @@ const Dashboard = () => {
   const [ViewEmpData, SetViewEmpData] = useState([])
 
   useEffect(() => {
-    try{
-      const res = axios.get('http://localhost:5000/Employee/DataEmp')
-      .then(res = SetViewEmpData(res.data.Result))
-      .catch(err = console.log(err))
-    }
-    catch(err){
-      console.log(err)
-    }
+    axios.get('http://localhost:5000/Employee/DataEmp')
+    .then(res => SetViewEmpData(res.data.Result))
+    .catch(err => console.log(err))
   }, [])
 
   if(RoleUser !== null && EmailUser !== null && RoleUser === "SuperAdmin"){
