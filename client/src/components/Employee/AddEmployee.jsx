@@ -79,7 +79,7 @@ const AddEmployee = () => {
                             </div>
                             <div className="my-4">
                                 <label htmlFor="" className="text-gray-500">Address : </label>
-                                <input type="email" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Address' 
+                                <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Address' 
                                 onChange={e => SetEmpData({...EmpData, Address:e.target.value})}/>
                             </div>
                             <div className="md:grid grid-cols-3 gap-4">
