@@ -144,7 +144,7 @@ const AddEmployee = () => {
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Religion : </label>
                                     <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Religion' 
-                                    onChange={e => SetEmpData({...EmpData, emgContact:e.target.value})}/>
+                                    onChange={e => SetEmpData({...EmpData, Religion:e.target.value})}/>
                                 </div>
                             </div>
                             <div className="">
