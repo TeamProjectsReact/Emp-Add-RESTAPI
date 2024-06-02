@@ -18,6 +18,9 @@ const Dashboard = () => {
             <p className="text-red-500 font-semibold text-xl">LogOut</p>
           </div>
           <hr className='my-4'/>
+          <Link>
+            <button className="py-4 px-8 bg-green-500 text-white rounded duration-500 hover:bg-green-600 shadow-md">Add New Employee</button>
+          </Link>
         </div>
       </div>
     )
