@@ -6,9 +6,18 @@ const Dashboard = () => {
   const navigate = useNavigate()
   const EmailUser = secureLocalStorage.getItem("Login1");
   const RoleUser = secureLocalStorage.getItem("Login2");
-  return (
-    <div>Dashboard</div>
-  )
+
+  if(RoleUser !== null && EmailUser !== null && RoleUser === "SuperAdmin"){
+    return (
+      <div>Dashboard</div>
+    )
+  }
+  else{
+    useEffect(() => {
+      localStorage.clear()
+      navigate('/')
+    }, [])
+  }
 }
 
 export default Dashboard
