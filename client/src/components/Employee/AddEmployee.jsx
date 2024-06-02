@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, {useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import secureLocalStorage from 'react-secure-storage';
@@ -27,10 +28,25 @@ const AddEmployee = () => {
 
     // headleSubmit
 
-    const headleSubmit = (e) => {
+    const headleSubmit = async (e) => {
         e.preventDefault();
+        
+        try{
+            const res = await axios.post('http://localhost:5000/Employee/AddEmp', EmpData)
+            .then(res => {
+                if(res.data.Status === "Success"){
+                    alert("Employee Added Successful")
+                    navigate('/Dashboard')
+                }
+                else{
+                    alert(res.data.Error)
+                }
+            })
+        }
+        catch (err) {
+            console.log(err)
+        }
 
-        console.log(EmpData)
     }
 
     if(RoleUser !== null && EmailUser !== null && RoleUser === "SuperAdmin"){
