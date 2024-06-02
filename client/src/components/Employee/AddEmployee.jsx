@@ -11,8 +11,8 @@ const AddEmployee = () => {
         return (
             <div className='bg-gray-200 min-h-screen py-12 px-8'>
                 <div className="bg-white py-8 px-10 rounded shadow-md">
-                    <h1 className="bg-gray-50 font-semibold">Add New Employee</h1>
-                    <hr className="" />
+                    <h1 className="text-gray-500 font-semibold text-xl">Add New Employee</h1>
+                    <hr className="mt-4" />
                 </div>
             </div>
         )
