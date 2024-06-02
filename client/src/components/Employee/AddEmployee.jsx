@@ -115,6 +115,10 @@ const AddEmployee = () => {
                                     <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Religion' />
                                 </div>
                             </div>
+                            <div className="">
+                                <button type="submit" className="bg-green-500 text-white py-4 px-8 rounded duration-500 hover:bg-green-600 shadow-md">Add Employeee</button>
+                            </div>
+
 
 
 
