@@ -19,10 +19,14 @@ const AddEmployee = () => {
 
                     <form >
                         <div className="">
-                            <div className="md:grid grid-cols-4 gap-4">
+                            <div className="md:grid grid-cols-3 gap-4">
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Employee ID : </label>
                                     <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee ID' />
+                                </div>
+                                <div className="my-2">
+                                    <label htmlFor="" className="text-gray-500">Email : </label>
+                                    <input type="email" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Email' />
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Initials : </label>
@@ -31,10 +35,6 @@ const AddEmployee = () => {
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Surname : </label>
                                     <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Surname' />
-                                </div>
-                                <div className="my-2">
-                                    <label htmlFor="" className="text-gray-500">Email : </label>
-                                    <input type="email" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Email' />
                                 </div>
                             </div>
                             <div className="my-2">
