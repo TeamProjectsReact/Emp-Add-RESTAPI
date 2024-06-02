@@ -21,6 +21,8 @@ const EmployeeController = {
             Religion
         } = req.body;
 
+        console.log(req.body)
+
         // check employee already in database
         const checkEmp =  await Employee.findOne({ empID, empEmail, NIC })
 
@@ -29,20 +31,20 @@ const EmployeeController = {
         }
         else{
             const NewEmp = new Employee({
-                empID, 
-                empEmail, 
-                Initials, 
-                Surname, 
-                Phone, 
-                NIC, 
-                Address, 
-                Category, 
-                dob, 
-                emgContact, 
-                Type, 
-                CivilState, 
-                Gender, 
-                Religion
+                EmpID: empID, 
+                email: empEmail, 
+                initial: Initials, 
+                surname: Surname, 
+                phone: Phone, 
+                nic: NIC, 
+                address: Address, 
+                designation: Category, 
+                dob: dob, 
+                emgcontact: emgContact, 
+                type: Type, 
+                civilstatus: CivilState, 
+                gender: Gender, 
+                relig: Religion
             })
 
             const ResultEmp = NewEmp.save()
