@@ -30,7 +30,7 @@ const EmployeeController = {
             return res.json({ Error: "Employee already in Database"})
         }
         else{
-            const NewEmp = new Employee({
+            const EmpNew = new Employee({
                 EmpID: empID, 
                 email: empEmail, 
                 initial: Initials, 
@@ -47,7 +47,7 @@ const EmployeeController = {
                 relig: Religion
             })
 
-            const ResultEmp = NewEmp.save()
+            const ResultEmp = EmpNew.save()
 
             if(ResultEmp){
                 return res.json({ Status: "Success"})
