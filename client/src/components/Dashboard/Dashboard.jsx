@@ -21,6 +21,8 @@ const Dashboard = () => {
   useEffect(() => {
     try{
       const res = axios.get('http://localhost:5000/Employee/DataEmp')
+      .then(res = SetViewEmpData(res.data.Result))
+      .catch(err = console.log(err))
     }
     catch(err){
       console.log(err)
@@ -82,7 +84,17 @@ const Dashboard = () => {
                             </tr>            
                         </thead>
                         <tbody>
-
+                            {
+                              ViewEmpData.map((Employee, index) => {
+                                return (
+                                  <tr key={index}>
+                                    <td>
+                                      {Employee.EmpID}
+                                    </td>
+                                  </tr>
+                                )
+                              })
+                            }
                         </tbody>
                     </table>
                 </div>   
