@@ -31,6 +31,12 @@ const Dashboard = () => {
           <Link to={'/SignUp'}>
             <button className="py-4 px-8 bg-green-500 text-white rounded duration-500 hover:bg-green-600 shadow-md mx-4">Add System User</button>
           </Link>
+
+          <div className="my-12">
+            <h1 className="text-gray-500 font-semibold text-xl">
+              Employees
+            </h1>
+          </div>
         </div>
       </div>
     )
