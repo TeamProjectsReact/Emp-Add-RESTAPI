@@ -60,16 +60,19 @@ const AddEmployee = () => {
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Phone : </label>
-                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Phone' />
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Phone' 
+                                    onChange={e => SetEmpData({...EmpData, Phone:e.target.value})}/>
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">NIC : </label>
-                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee NIC' />
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee NIC' 
+                                    onChange={e => SetEmpData({...EmpData, NIC:e.target.value})}/>
                                 </div>
                             </div>
                             <div className="my-4">
                                 <label htmlFor="" className="text-gray-500">Address : </label>
-                                <input type="email" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Address' />
+                                <input type="email" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Address' 
+                                onChange={e => SetEmpData({...EmpData, Address:e.target.value})}/>
                             </div>
                             <div className="md:grid grid-cols-3 gap-4">
                                 <div className="my-2">
