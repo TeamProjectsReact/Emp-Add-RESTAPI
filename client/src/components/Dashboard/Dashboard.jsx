@@ -26,10 +26,10 @@ const Dashboard = () => {
           </div>
           <hr className='my-4'/>
           <Link to={'/AddEmployee'}>
-            <button className="py-4 px-8 bg-green-500 text-white rounded duration-500 hover:bg-green-600 shadow-md">Add New Employee</button>
+            <button className="md:my-0 my-2 md:w-auto w-full md:mx-2 mx-0 md:py-4 py-2 px-8 bg-green-500 text-white rounded duration-500 hover:bg-green-600 shadow-md">Add New Employee</button>
           </Link>
           <Link to={'/SignUp'}>
-            <button className="py-4 px-8 bg-green-500 text-white rounded duration-500 hover:bg-green-600 shadow-md mx-4">Add System User</button>
+            <button className="md:my-0 my-2 md:w-auto w-full md:mx-2 mx-0 md:py-4 py-2 px-8 bg-green-500 text-white rounded duration-500 hover:bg-green-600 shadow-md">Add System User</button>
           </Link>
 
           <div className="my-12">
@@ -37,8 +37,43 @@ const Dashboard = () => {
               Employees
             </h1>
 
+            <div class="overflow-x-auto my-8 bg-white">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    <p className="hidden md:table-cell">Emp No</p>
+                                    <p className="md:hidden">Emp Data</p>                                   
+                                </th>
+                                <th scope="col" class="px-6 py-3 hidden md:table-cell">
+                                    Email
+                                </th>
+                                <th scope="col" class="px-6 py-3 hidden md:table-cell">
+                                    Surname
+                                </th>
+                                <th scope="col" class="px-6 py-3 hidden md:table-cell">
+                                    NIC
+                                </th>
+                                <th scope="col" class="px-6 py-3 hidden md:table-cell">
+                                    Category
+                                </th>
+                                <th scope="col" class="px-6 py-3 hidden md:table-cell">
+                                    Type 
+                                </th>
+                                <th scope="col" class="px-6 py-3 hidden md:table-cell">
+                                    Gender
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Action
+                                </th>
+                            </tr>            
+                        </thead>
+                        <tbody>
 
-            
+                        </tbody>
+                    </table>
+                </div>   
+
           </div>
         </div>
       </div>
