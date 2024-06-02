@@ -51,12 +51,10 @@ const AddEmployee = () => {
                             </div>
                             <div className="md:grid grid-cols-3 gap-4">
                                 <div className="my-2">
-                                    <label htmlFor="">Job Category</label>
+                                    <label htmlFor="" className="text-gray-500">Job Category</label>
                                     <select className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required
                                     >
-                                        <option>Select Option</option>
-                                        <option value="HOD">Head</option>
-                                        <option value="HOD">Head</option>
+                                        <option >Select Option</option>
                                         <option value="HOD">Head</option>
                                         <option value="TO">Transport Office</option>
                                         <option value="Librarian">Librarian</option>
