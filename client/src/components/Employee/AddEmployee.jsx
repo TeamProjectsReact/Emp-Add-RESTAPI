@@ -78,7 +78,7 @@ const AddEmployee = () => {
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Job Category</label>
                                     <select className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required
-                                    >
+                                    onChange={e => SetEmpData({...EmpData, Category:e.target.value})}>
                                         <option >Select Option</option>
                                         <option value="HOD">Head</option>
                                         <option value="TO">TO</option>
@@ -94,11 +94,13 @@ const AddEmployee = () => {
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Date of Birth : </label>
-                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Date of Birth' />
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Date of Birth' 
+                                    onChange={e => SetEmpData({...EmpData, dob:e.target.value})}/>
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Emergency Contact : </label>
-                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Emergency Contact' />
+                                    <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Emergency Contact' 
+                                    onChange={e => SetEmpData({...EmpData, emgContact:e.target.value})}/>
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">Type : </label>
