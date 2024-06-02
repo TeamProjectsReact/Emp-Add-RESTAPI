@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const EmployeeSchema = mongoose.Schema({
+const EmployeeSchema = new mongoose.Schema({
     EmpID: {
         type: String,
         required: true,
@@ -67,6 +67,6 @@ const EmployeeSchema = mongoose.Schema({
 })
 
 // create Model
-const Employee = new mongoose.model('Employee', EmployeeSchema)
+const Employee = mongoose.model('Employee', EmployeeSchema)
 
 module.exports = Employee

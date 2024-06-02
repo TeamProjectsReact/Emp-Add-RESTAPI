@@ -20,6 +20,9 @@ const EmployeeController = {
             Gender, 
             Religion
         } = req.body;
+
+        // check employee already in database
+        const checkEmp =  await Employee
     }
 }
 
