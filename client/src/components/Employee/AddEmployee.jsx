@@ -37,6 +37,7 @@ const AddEmployee = () => {
                 if(res.data.Status === "Success"){
                     alert("Employee Added Successful")
                     navigate('/Dashboard')
+                    window.location.reload()
                 }
                 else{
                     alert(res.data.Error)
