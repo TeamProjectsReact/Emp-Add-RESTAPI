@@ -10,6 +10,7 @@ const EmployeeController = {
             Initials, 
             Surname, 
             Phone, 
+            dept,
             NIC, 
             Address, 
             Category, 
