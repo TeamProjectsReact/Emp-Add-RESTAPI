@@ -37,6 +37,7 @@ const EmployeeController = {
                 initial: Initials, 
                 surname: Surname, 
                 phone: Phone, 
+                Department: dept,
                 nic: NIC, 
                 address: Address, 
                 designation: Category, 
