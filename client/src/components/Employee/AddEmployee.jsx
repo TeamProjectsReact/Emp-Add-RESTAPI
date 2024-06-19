@@ -90,7 +90,7 @@ const AddEmployee = () => {
                                     onChange={e => SetEmpData({...EmpData, Phone:e.target.value})}/>
                                 </div>
                                 <div className="my-2">
-                                    <label htmlFor="" className="text-gray-500">Job Category</label>
+                                    <label htmlFor="" className="text-gray-500">Department</label>
                                     <select className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required
                                     onChange={e => SetEmpData({...EmpData, dept:e.target.value})}>
                                         <option >Select Option</option>
