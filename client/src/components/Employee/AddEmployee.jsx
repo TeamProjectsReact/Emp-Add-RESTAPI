@@ -15,6 +15,7 @@ const AddEmployee = () => {
         Initials: '',
         Surname: '',
         Phone: '',
+        dept: '',
         NIC: '',
         Address: '',
         Category: '',
@@ -87,6 +88,19 @@ const AddEmployee = () => {
                                     <label htmlFor="" className="text-gray-500">Phone : </label>
                                     <input type="text" name="" id="" className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required placeholder='Enter Employee Phone' 
                                     onChange={e => SetEmpData({...EmpData, Phone:e.target.value})}/>
+                                </div>
+                                <div className="my-2">
+                                    <label htmlFor="" className="text-gray-500">Job Category</label>
+                                    <select className="h-12 w-full rounded bg-gray-200 pl-2 my-2 shadow-md" required
+                                    onChange={e => SetEmpData({...EmpData, dept:e.target.value})}>
+                                        <option >Select Option</option>
+                                        <option value="Computer Science, Mathematics and Statistics">Computer Science, Mathematics and Statistics</option>
+                                        <option value="Biological Sciences">Biological Sciences</option>
+                                        <option value="Chemical and Physical Sciences">Chemical and Physical Sciences</option>                                        
+                                        <option value="Earth and Space Sciences">Earth and Space Sciences</option>
+                                        <option value="Environment Sciences">Environment Sciences</option> 
+                                        <option value="Philosophy and Social Sciences">Philosophy and Social Sciences</option>
+                                    </select>
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">NIC : </label>
