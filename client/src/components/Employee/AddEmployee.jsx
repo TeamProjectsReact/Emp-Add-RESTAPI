@@ -99,8 +99,8 @@ const AddEmployee = () => {
                                         <option value="Chemical and Physical Sciences">Chemical and Physical Sciences</option>                                        
                                         <option value="Earth and Space Sciences">Earth and Space Sciences</option>
                                         <option value="Environment Sciences">Environment Sciences</option> 
-                                        <option value="Philosophy and Social Sciences">Philosophy and Social Sciences</option>
-                                    </select>
+                                        <option value="Philosophy and Social Sciences">Philosophy and Social Sciences</option>                                  
+                                        <option value="NonAcademic Staff">NonAcademic Staff</option></select>
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-gray-500">NIC : </label>
